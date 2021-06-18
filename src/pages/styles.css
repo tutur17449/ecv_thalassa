@@ -1,0 +1,12 @@
+#wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+#content {
+    overflow: scroll;
+    flex: 8;
+    position: relative;
+}
