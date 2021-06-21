@@ -1,0 +1,18 @@
+.podcast-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.podcast-header span {
+    margin-right: 20px;
+    background-color: #394DFF;
+    color: #fff;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}

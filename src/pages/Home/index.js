@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import MapWrapper from "../../components/Map/MapWrapper";
-import Loader from "../../components/Loader";
 import "./styles.css";
 
 export default function Home() {
@@ -19,7 +18,6 @@ export default function Home() {
 
   return (
     <>
-      {!position && <Loader />}
       <MapWrapper position={position} />
     </>
   );
