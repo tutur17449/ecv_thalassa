@@ -1,0 +1,16 @@
+.profil {
+    /*     background-color: #F9F9F9;
+ */
+}
+
+.profil .profil-header {
+    text-align: center;
+    background-color: #EAEAEA;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.profil .profil-content {
+    text-align: center;
+    margin-top: 2rem;
+}

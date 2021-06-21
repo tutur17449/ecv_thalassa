@@ -1,0 +1,45 @@
+.recompense-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 20px;
+    border-bottom: 1px solid #bbbbbb;
+}
+
+.recompense-card div:first-of-type {
+    text-align: left;
+    position: relative;
+}
+
+.recompense-card div:first-of-type img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.recompense-card h4 {
+    margin: 0 0 6px 0;
+}
+
+.recompense-card p {
+    margin: 0 0 6px 0;
+    color: #7B8794;
+}
+
+.recompense-card .progress {
+    width: 200px;
+    height: 8px;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.recompense-card .progression {
+    width: 120px;
+    height: 8px;
+    position: absolute;
+    left: 0;
+    background-color: #499A4C;
+}

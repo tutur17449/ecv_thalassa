@@ -1,0 +1,20 @@
+#tab-profil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#tab-profil p {
+    width: 48%;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #CBD2D9;
+    color: #CBD2D9;
+    margin: 15px auto 0;
+    transition: all 250ms;
+}
+
+#tab-profil p.active {
+    border-bottom: 3px solid #323F4B;
+    color: #323F4B;
+}
