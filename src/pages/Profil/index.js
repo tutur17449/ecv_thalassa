@@ -16,8 +16,10 @@ export default function Profil() {
     <div className="profil">
       <div className="profil-header">Profile</div>
       <div className="profil-content">
-        <img src={PP} alt="profil" />
-        <p>Nom Prénom</p>
+        <div className="profil-informations">
+          <img src={PP} alt="profil" />
+          <p>Nom Prénom</p>
+        </div>
         <TabProfil current={current} updateCurrent={updateCurrent} />
         {current === 0 ? (
           <>
