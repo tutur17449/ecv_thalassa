@@ -7,6 +7,8 @@ import { Link, useLocation } from "react-router-dom";
 export default function Header({ switchView, isMap }) {
   const location = useLocation();
 
+  if (location.pathname === "/profil") return null;
+
   return (
     <div id="navbar">
       <h1>Bonjour Mathilde,</h1>
