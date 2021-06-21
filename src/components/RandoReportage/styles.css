@@ -1,0 +1,38 @@
+.reportage-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.reportage-header span {
+    margin-right: 20px;
+    background-color: #394DFF;
+    color: #fff;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.reportage-illustrations .full-width {
+    width: 100%;
+    height: 100px;
+    background-color: #C4C4C4;
+}
+
+.reportage-illustrations .vignettes {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reportage-illustrations .vignettes div {
+    width: 15%;
+    height: 40px;
+    background-color: #C4C4C4;
+}
