@@ -1,9 +1,12 @@
 import MapsIcon from "../../assets/icons/maps.png";
-import SearchIcon from "../../assets/icons/search.png";
+import ListIcon from "../../assets/icons/list.png";
 import SettingsIcon from "../../assets/icons/settings.png";
 import "./styles.css";
+import { Link, useLocation } from "react-router-dom";
 
-export default function Header() {
+export default function Header({ switchView, isMap }) {
+  const location = useLocation();
+
   return (
     <div id="navbar">
       <h1>Bonjour Mathilde,</h1>
@@ -11,12 +14,18 @@ export default function Header() {
         <div className="nav-search">
           <input placeholder="Métiers, animal, ville ..." />
         </div>
-        <a href="/">
+        <Link to="/">
           <img src={SettingsIcon} alt="settings" />
-        </a>
-        <a href="/">
-          <img src={MapsIcon} alt="map" />
-        </a>
+        </Link>
+        {location.pathname === "/randos" ? (
+          <Link to="/">
+            <img src={MapsIcon} alt="map" />
+          </Link>
+        ) : (
+          <Link to="/randos">
+            <img src={ListIcon} alt="list" />
+          </Link>
+        )}
       </div>
     </div>
   );

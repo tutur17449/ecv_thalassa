@@ -1,9 +1,11 @@
-import L from "leaflet";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import L from "leaflet";
 import markerData from "../../data/informations_points.json";
 import markerIcon from "../../assets/marker.png";
 import "leaflet/dist/leaflet.css";
+import "./mapWrapper.styles.css";
+import RandoCard from "../RandoCard";
 
 // custom icon
 const myIcon = new L.Icon({
@@ -28,10 +30,12 @@ var firstpolyline = new L.Polyline(pointList, {
 export default function MapWrapper({ position }) {
   const [map, setmap] = useState(null);
 
-  if (map && position) {
-    firstpolyline.addTo(map);
-    map.flyTo([position?.lat, position?.lon]);
-  }
+  useEffect(() => {
+    if (map && position) {
+      firstpolyline.addTo(map);
+      map.flyTo([position?.lat, position?.lon]);
+    }
+  }, [map, position]);
 
   return (
     <>
@@ -50,7 +54,7 @@ export default function MapWrapper({ position }) {
           markerData.map((i, id) => (
             <Marker position={i.coords} icon={myIcon} key={id}>
               <Popup>
-                {i.title} <br /> {i.content}
+                <RandoCard data={i} />
               </Popup>
             </Marker>
           ))}

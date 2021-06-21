@@ -1,34 +1,58 @@
 [
     {
+        "id": 1,
         "coords": [
             48.866667,
             2.333333
         ],
         "title": "Title",
-        "content": "Content ..."
+        "content": "Content ...",
+        "difficulty": "Facile",
+        "img": "placeholder.jpg",
+        "location": "Honfleur",
+        "type": "Boucle",
+        "duration": "1h40"
     },
     {
+        "id": 2,
         "coords": [
             47.5333,
             -2.7667
         ],
         "title": "Title",
-        "content": "Content ..."
+        "content": "Content ...",
+        "difficulty": "Moyen",
+        "img": "placeholder.jpg",
+        "location": "Honfleur",
+        "type": "Boucle",
+        "duration": "1h40"
     },
     {
+        "id": 3,
         "coords": [
             51,
             2
         ],
         "title": "Title",
-        "content": "Content ..."
+        "content": "Content ...",
+        "difficulty": "Facile",
+        "img": "placeholder.jpg",
+        "location": "Honfleur",
+        "type": "Boucle",
+        "duration": "1h40"
     },
     {
+        "id": 4,
         "coords": [
-            51,
-            2
+            48.5333,
+            -2.7667
         ],
         "title": "Title",
-        "content": "Content ..."
+        "content": "Content ...",
+        "difficulty": "Difficile",
+        "img": "placeholder.jpg",
+        "location": "Honfleur",
+        "type": "Boucle",
+        "duration": "1h40"
     }
 ]

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import SearchIcon from "../../assets/icons/search.png";
 import FavorisIcon from "../../assets/icons/favoris.png";
 import NavigationIcon from "../../assets/icons/direction.png";
@@ -7,18 +8,18 @@ import "./styles.css";
 export default function BottomNav() {
   return (
     <div id="bottom-nav">
-      <a href="/">
+      <Link to="/search">
         <img src={SearchIcon} alt="search" />
-      </a>
-      <a href="/">
+      </Link>
+      <Link to="/favoris">
         <img src={FavorisIcon} alt="favoris" />
-      </a>
-      <a href="/">
+      </Link>
+      <Link to="/">
         <img src={NavigationIcon} alt="navigation" />
-      </a>
-      <a href="/">
+      </Link>
+      <Link to="/profil">
         <img src={ProfilIcon} alt="profil" />
-      </a>
+      </Link>
     </div>
   );
 }

@@ -1,0 +1,80 @@
+.rando-card {
+    border-bottom: 1px solid #bbbbbb;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.rando-card h2 {
+    margin: 0;
+    padding-right: 30px;
+}
+
+.rando-card .rando-card-img img {
+    height: 100px;
+    width: auto;
+    border-radius: 5px;
+}
+
+.rando-card-content {
+    position: relative;
+}
+
+.rando-card-content img {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    height: 20px;
+    width: 20px;
+}
+
+.rando-card-content div span {
+    margin: 0 5px;
+}
+
+.rando-card-content div span:first-child {
+    margin: 0 5px 0 0;
+}
+
+.difficulty {
+    color: #fff;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.difficulty.Facile {
+    background-color: #499A4C;
+}
+
+.difficulty.Moyen {
+    background-color: #D98119;
+}
+
+.difficulty.Difficile {
+    background-color: #DC2B2B;
+}
+
+/** CARD IN POPUP */
+
+.leaflet-popup-content {
+    margin: 13px 19px;
+}
+
+.leaflet-popup .rando-card {
+    border: none;
+    flex-direction: column;
+    padding: 15px 0 0 0;
+}
+
+.leaflet-popup .rando-card p {
+    margin: 5px 0;
+}
+
+.leaflet-popup .rando-card .rando-card-img img {
+    border-radius: 5px;
+    width: 120px;
+    height: 100%;
+}

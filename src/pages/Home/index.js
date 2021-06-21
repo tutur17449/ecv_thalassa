@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
-import MapWrapper from "../components/Map/MapWrapper";
-import Loader from "../components/Loader";
-import Header from "../components/Header";
-import BottomNav from "../components/BottomNav";
+import MapWrapper from "../../components/Map/MapWrapper";
+import Loader from "../../components/Loader";
 import "./styles.css";
 
 export default function Home() {
@@ -20,13 +18,9 @@ export default function Home() {
   }, []);
 
   return (
-    <div id="wrapper">
-      <Header />
-      <div id="content">
-        {!position && <Loader />}
-        <MapWrapper position={position} />
-      </div>
-      <BottomNav />
-    </div>
+    <>
+      {!position && <Loader />}
+      <MapWrapper position={position} />
+    </>
   );
 }

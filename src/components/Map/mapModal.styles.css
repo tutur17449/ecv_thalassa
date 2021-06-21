@@ -1,0 +1,60 @@
+#map-modal {
+    width: 100%;
+    position: absolute;
+    bottom: 30px;
+    z-index: 1001
+}
+
+.modal-content {
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 0;
+    font-size: .7rem;
+    height: 120px;
+}
+
+/** CONTENT LEFT */
+
+.modal-content-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.img-ph {
+    border-radius: 5px;
+    width: auto;
+    height: 60px;
+}
+
+/** CONTENT RIGHT */
+
+.modal-content .modal-content-right {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    padding: 0 5px;
+}
+
+.modal-content-right h3 {
+    margin: 0 0 .2rem;
+    font-size: .85rem;
+}
+
+.difficulty {
+    background-color: #499A4C;
+    color: #fff;
+}
+
+.modal-content-right-infos {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0;
+}
