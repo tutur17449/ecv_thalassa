@@ -1,4 +1,16 @@
-#rando .header img {
+#rando .header {
+    position: relative;
+}
+
+#rando .header img:nth-of-type(1) {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 30px;
+    width: 30px;
+}
+
+#rando .header img:nth-of-type(2) {
     width: 100%;
     height: auto;
 }
