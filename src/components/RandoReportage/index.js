@@ -1,3 +1,4 @@
+import VideoLayer from "../VideoLayer";
 import "./styles.css";
 
 export default function RandoReportage() {
@@ -29,7 +30,7 @@ export default function RandoReportage() {
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </div>
-      <div className="reportage-video"></div>
+      <VideoLayer />
     </div>
   );
 }

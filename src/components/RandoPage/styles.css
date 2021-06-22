@@ -20,7 +20,7 @@
     padding: 10px 25px;
 }
 
-#rando .content img {
+#rando .content img.fav-icon {
     position: absolute;
     right: 30px;
     top: 30px;

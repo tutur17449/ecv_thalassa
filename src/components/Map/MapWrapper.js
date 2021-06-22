@@ -16,7 +16,7 @@ const myIcon = new L.Icon({
 });
 
 // test draw line
-var pointA = new L.LatLng(47.5333, -2.7667);
+/* var pointA = new L.LatLng(47.5333, -2.7667);
 var pointB = new L.LatLng(47.658236, -2.760847);
 var pointList = [pointA, pointB];
 
@@ -25,14 +25,14 @@ var firstpolyline = new L.Polyline(pointList, {
   weight: 3,
   opacity: 0.5,
   smoothFactor: 1,
-});
+}); */
 
 export default function MapWrapper({ position }) {
   const [map, setmap] = useState(null);
 
   useEffect(() => {
     if (map && position) {
-      firstpolyline.addTo(map);
+      // firstpolyline.addTo(map);
       map.flyTo([position?.lat, position?.lon]);
     }
   }, [map, position]);
@@ -44,7 +44,11 @@ export default function MapWrapper({ position }) {
         zoom={13}
         scrollWheelZoom={false}
         whenCreated={setmap}
-        style={{ width: "100%", height: "100%", zIndex: 1 }}
+        style={{
+          width: "100%",
+          height: "100%",
+          zIndex: 1,
+        }}
       >
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

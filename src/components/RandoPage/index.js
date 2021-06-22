@@ -26,7 +26,7 @@ export default function Rando({ data }) {
           <span>{data.type}</span>
           <span>{data.duration}</span>
         </div>
-        <img src={FavorisIcon} alt="favoris" />
+        <img src={FavorisIcon} alt="favoris" className="fav-icon" />
         <p>{data.content}</p>
         <div className="separator"></div>
         <RandoReportage />

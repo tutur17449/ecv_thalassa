@@ -1,3 +1,4 @@
+import VideoLayer from "../VideoLayer";
 import "./styles.css";
 
 export default function RandoPodcast() {
@@ -15,6 +16,7 @@ export default function RandoPodcast() {
           aliquip ex ea commodo consequat.
         </p>
       </div>
+      <VideoLayer />
     </div>
   );
 }
